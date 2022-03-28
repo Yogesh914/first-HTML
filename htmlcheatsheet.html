@@ -86,13 +86,75 @@
         <!-- no functionability in HTML only controlling how it looks-->
 
         <form action="process.php" method="GET">
-            <label> First Name </label>
-            <input type="text" name="firstname">
+            <div>
+                <label> First Name </label>
+                <input type="text" name="firstname" placeholder="Enter First Name">
+            </div>
 
-            <label> Last Name </label>
-            <input type="text" name="lastname">
+            <br>
+            
+            <div>
+                <label> Last Name </label>
+                <input type="text" name="lastname">
+            </div>
+            <br>
 
+            <div>
+                <label> Email </label>
+                <input type="email" name="email">
+            </div>
+            <br>
+            <div>
+                <label> Message </label>
+                <textarea name="message"></textarea>
+            </div>
+            <br>
+            <div>
+                <label> Gender </label>
+                <select name="gender">
+
+                    <option value="male"> Male </option>
+                    <option value="female"> Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label> Age </label>
+                <input type="number" name="age" value = "30">
+            </div>
+            <br>
+            <div>
+                <label> Birthday </label>
+                <input type="date" name="birthday">
+            </div>
+
+            <br>
+            
+            <input type="submit" name="submit" value="Submit">
+            
         </form>
+
+        <!-- Button (using javascript to actually make it do something) -->
+        <button>Click Me</button>
+
+        <br>
+
+        <!-- Images -->
+        <a href="images/sample.jpg">
+        <img src="images/sample.jpg" alt="My Sample Image" width="200" height="auto">
+        </a>
+
+        <!-- Quotations -->
+        <blockquote cite="http://yogeshprabhu.me">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit repellendus expedita quidem nesciunt, necessitatibus omnis placeat, quaerat maiores, aut est quo perferendis consequuntur! Amet voluptatibus, harum qui facere nobis dolorum?
+        </blockquote>
+
+        <p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
+
+        <p> <cite>HTML cheat sheet</cite> by Yogesh</p>
+
+        <div style="margin-top: 500px"></div>
 
     </body>
 </html>
